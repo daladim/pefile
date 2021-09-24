@@ -3425,8 +3425,8 @@ class PE:
                 )
 
             if simultaneous_errors >= MAX_SIMULTANEOUS_ERRORS:
-                self.__warnings.append("Too many warnings parsing section. Aborting.")
-                break
+                self.__warnings.append("Too many warnings parsing section. A vanilla version of pefile would have aborted here.")
+                #break
 
             section_flags = retrieve_flags(SECTION_CHARACTERISTICS, "IMAGE_SCN_")
 
